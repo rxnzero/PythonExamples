@@ -1,0 +1,116 @@
+PS D:\> cd .\python-test\
+PS D:\python-test>
+PS D:\python-test>
+PS D:\python-test> py hello.py
+PS D:\python-test> pip install pyinstaller
+Collecting pyinstaller
+  Downloading pyinstaller-4.10-py3-none-win_amd64.whl (2.0 MB)
+     |████████████████████████████████| 2.0 MB ...
+Collecting pefile>=2017.8.1
+  Downloading pefile-2021.9.3.tar.gz (72 kB)
+     |████████████████████████████████| 72 kB 266 kB/s
+Collecting altgraph
+  Downloading altgraph-0.17.2-py2.py3-none-any.whl (21 kB)
+Collecting pywin32-ctypes>=0.2.0
+  Downloading pywin32_ctypes-0.2.0-py2.py3-none-any.whl (28 kB)
+Requirement already satisfied: setuptools in d:\python3.10.2\lib\site-packages (from pyinstaller) (58.1.0)
+Collecting pyinstaller-hooks-contrib>=2020.6
+  Downloading pyinstaller_hooks_contrib-2022.2-py2.py3-none-any.whl (223 kB)
+     |████████████████████████████████| 223 kB 6.4 MB/s
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+     |████████████████████████████████| 829 kB 6.8 MB/s
+Using legacy 'setup.py install' for pefile, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for future, since package 'wheel' is not installed.
+Installing collected packages: future, pywin32-ctypes, pyinstaller-hooks-contrib, pefile, altgraph, pyinstaller
+    Running setup.py install for future ... done
+    Running setup.py install for pefile ... done
+Successfully installed altgraph-0.17.2 future-0.18.2 pefile-2021.9.3 pyinstaller-4.10 pyinstaller-hooks-contrib-2022.2 pywin32-ctypes-0.2.0
+WARNING: You are using pip version 21.2.4; however, version 22.0.4 is available.
+You should consider upgrading via the 'D:\Python3.10.2\python.exe -m pip install --upgrade pip' command.
+PS D:\python-test> pyinstaller --onefile hello.py
+430 INFO: PyInstaller: 4.10
+431 INFO: Python: 3.10.2
+461 INFO: Platform: Windows-10-10.0.19044-SP0
+463 INFO: wrote D:\python-test\hello.spec
+471 INFO: UPX is not available.
+476 INFO: Extending PYTHONPATH with paths
+['D:\\python-test']
+790 INFO: checking Analysis
+790 INFO: Building Analysis because Analysis-00.toc is non existent
+790 INFO: Initializing module dependency graph...
+794 INFO: Caching module graph hooks...
+811 INFO: Analyzing base_library.zip ...
+7423 INFO: Processing pre-find module path hook distutils from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path\\hook-distutils.py'.
+7424 INFO: distutils: retargeting to non-venv dir 'D:\\Python3.10.2\\lib'
+9892 INFO: Caching module dependency graph...
+10171 INFO: running Analysis Analysis-00.toc
+10198 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by D:\Python3.10.2\python.exe
+10661 INFO: Analyzing D:\python-test\hello.py
+10665 INFO: Processing module hooks...
+10665 INFO: Loading module hook 'hook-difflib.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10667 INFO: Loading module hook 'hook-distutils.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10668 INFO: Loading module hook 'hook-distutils.util.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10670 INFO: Loading module hook 'hook-encodings.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10796 INFO: Loading module hook 'hook-heapq.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10799 INFO: Loading module hook 'hook-lib2to3.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10953 INFO: Loading module hook 'hook-multiprocessing.util.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10955 INFO: Loading module hook 'hook-pickle.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10956 INFO: Loading module hook 'hook-sysconfig.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10957 INFO: Loading module hook 'hook-xml.etree.cElementTree.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+10958 INFO: Loading module hook 'hook-xml.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+11021 INFO: Loading module hook 'hook-_tkinter.py' from 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks'...
+11251 INFO: checking Tree
+11251 INFO: Building Tree because Tree-00.toc is non existent
+11251 INFO: Building Tree Tree-00.toc
+11690 INFO: checking Tree
+11691 INFO: Building Tree because Tree-01.toc is non existent
+11691 INFO: Building Tree Tree-01.toc
+11865 INFO: checking Tree
+11866 INFO: Building Tree because Tree-02.toc is non existent
+11866 INFO: Building Tree Tree-02.toc
+11883 INFO: Looking for ctypes DLLs
+11900 INFO: Analyzing run-time hooks ...
+11902 INFO: Including run-time hook 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py'
+11906 INFO: Including run-time hook 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_subprocess.py'
+11908 INFO: Including run-time hook 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py'
+11911 INFO: Including run-time hook 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py'
+11914 INFO: Including run-time hook 'D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py'
+11920 INFO: Looking for dynamic libraries
+12313 INFO: Looking for eggs
+12313 INFO: Using Python library D:\Python3.10.2\python310.dll
+12313 INFO: Found binding redirects:
+[]
+12325 INFO: Warnings written to D:\python-test\build\hello\warn-hello.txt
+12366 INFO: Graph cross-reference written to D:\python-test\build\hello\xref-hello.html
+12411 INFO: checking PYZ
+12417 INFO: Building PYZ (ZlibArchive) D:\python-test\build\hello\PYZ-00.pyz
+12884 INFO: Building PYZ (ZlibArchive) D:\python-test\build\hello\PYZ-00.pyz completed successfully.
+12897 INFO: checking PKG
+12897 INFO: Building PKG because PKG-00.toc is non existent
+12897 INFO: Building PKG (CArchive) hello.pkg
+18987 INFO: Building PKG (CArchive) hello.pkg completed successfully.
+19004 INFO: Bootloader D:\Python3.10.2\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe
+19004 INFO: checking EXE
+19004 INFO: Building EXE because EXE-00.toc is non existent
+19004 INFO: Building EXE from EXE-00.toc
+19005 INFO: Copying bootloader EXE to D:\python-test\dist\hello.exe.notanexecutable
+19043 INFO: Copying icon to EXE
+19044 INFO: Copying icons from ['D:\\Python3.10.2\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico']
+19066 INFO: Writing RT_GROUP_ICON 0 resource with 104 bytes
+19066 INFO: Writing RT_ICON 1 resource with 3752 bytes
+19066 INFO: Writing RT_ICON 2 resource with 2216 bytes
+19066 INFO: Writing RT_ICON 3 resource with 1384 bytes
+19067 INFO: Writing RT_ICON 4 resource with 37019 bytes
+19067 INFO: Writing RT_ICON 5 resource with 9640 bytes
+19067 INFO: Writing RT_ICON 6 resource with 4264 bytes
+19067 INFO: Writing RT_ICON 7 resource with 1128 bytes
+19076 INFO: Copying 0 resources to EXE
+19076 INFO: Emedding manifest in EXE
+19077 INFO: Updating manifest in D:\python-test\dist\hello.exe.notanexecutable
+19092 INFO: Updating resource type 24 name 1 language 0
+19101 INFO: Appending PKG archive to EXE
+21790 INFO: Building EXE from EXE-00.toc completed successfully.
+PS D:\python-test>
+PS D:\python-test>
