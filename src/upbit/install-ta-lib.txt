@@ -1,0 +1,44 @@
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\>pip install TA_Lib-0.4.24-pp38-pypy38_pp73-win_amd64.whl
+ERROR: TA_Lib-0.4.24-pp38-pypy38_pp73-win_amd64.whl is not a supported wheel on this platform.
+WARNING: You are using pip version 21.2.4; however, version 22.1 is available.
+You should consider upgrading via the 'D:\Python3.10.2\python.exe -m pip install --upgrade pip' command.
+
+D:\>pip install TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
+Processing d:\ta_lib-0.4.24-cp310-cp310-win_amd64.whl
+Requirement already satisfied: numpy in d:\python3.10.2\lib\site-packages (from TA-Lib==0.4.24) (1.22.3)
+Installing collected packages: TA-Lib
+Successfully installed TA-Lib-0.4.24
+WARNING: You are using pip version 21.2.4; however, version 22.1 is available.
+You should consider upgrading via the 'D:\Python3.10.2\python.exe -m pip install --upgrade pip' command.
+
+D:\>pip install TA-Lib
+Requirement already satisfied: TA-Lib in d:\python3.10.2\lib\site-packages (0.4.24)
+Requirement already satisfied: numpy in d:\python3.10.2\lib\site-packages (from TA-Lib) (1.22.3)
+WARNING: You are using pip version 21.2.4; however, version 22.1 is available.
+You should consider upgrading via the 'D:\Python3.10.2\python.exe -m pip install --upgrade pip' command.
+
+D:\>D:\Python3.10.2\python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in d:\python3.10.2\lib\site-packages (21.2.4)
+Collecting pip
+  Downloading pip-22.1-py3-none-any.whl (2.1 MB)
+     |????????????????????????????????| 2.1 MB ...
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Uninstalling pip-21.2.4:
+      Successfully uninstalled pip-21.2.4
+Successfully installed pip-22.1
+
+D:\>pip install TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
+Processing d:\ta_lib-0.4.24-cp310-cp310-win_amd64.whl
+Requirement already satisfied: numpy in d:\python3.10.2\lib\site-packages (from TA-Lib==0.4.24) (1.22.3)
+TA-Lib is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+
+D:\>pip install TA-Lib
+Requirement already satisfied: TA-Lib in d:\python3.10.2\lib\site-packages (0.4.24)
+Requirement already satisfied: numpy in d:\python3.10.2\lib\site-packages (from TA-Lib) (1.22.3)
+
+D:\>
